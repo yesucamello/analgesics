@@ -602,7 +602,7 @@
     injury:  ['Injury site', 'Damaged cells release arachidonic acid. COX enzymes convert it into prostaglandins, which excite the pain nerve ending (nociceptor) and start the signal.'],
     cox:     ['COX enzyme', 'Makes prostaglandins. NSAIDs such as ibuprofen and aspirin block it. COX-2 drives pain, inflammation and fever; COX-1 protects the stomach lining, platelets and kidney blood flow, which explains the side effects.'],
     synapse: ['Spinal cord synapse', 'The synapse sits in the dorsal horn, the butterfly-shaped grey matter in the small cross-section (red dot). Calcium enters the terminal, vesicles release substance P and glutamate, and the next neuron fires. Opioids bind μ receptors here: calcium channels close, less transmitter is released and the next neuron fires less.'],
-    brain:   ['Brain', 'The thalamus relays the signal to the cortex, where it is perceived as pain. Opioids also act in the brain. Acetaminophen acts mainly in the central nervous system, and its exact mechanism is not fully understood.']
+    brain:   ['Brain', 'The thalamus relays the signal to the cortex, where it is perceived as pain. Opioids also act in the brain. Acetaminophen acts mainly in the central nervous system.']
   };
   const POS = { injury: [28, 130], cox: [120, 222], synapse: [350, 120], brain: [612, 60], patient: [612, 252] };
   function showInfo(k){ const [t, d] = INFO[k]; $('info').innerHTML = '<b>' + t + '</b>' + d; ring(POS[k][0], POS[k][1], 14, '#c2457a'); }
